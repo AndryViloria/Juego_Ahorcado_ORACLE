@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/2666f7d089.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Moonrocks&family=Splash&display=swap" rel="stylesheet">
+    <title>Juego El Ahorcado</title>
+</head>
+
+<body>
+    <section class="container">
+<!-- HEADER -->
+        <header class="header">
+            <img class="logo" src="assets/img/Vector.png" alt="logo alura">
+            <h4 class="titulo">El Ahorcado de Animales</h4>
+        </header>
+
+<!-- MENU PRINCIPAL -->
+        <div id="menu_principal">
+            <button class="btns" id="btnIniciarJuego" ; onclick="onIniciarJuego()">Iniciar Juego</button>
+            <button class="btns" id="btnAgregarNuevaPalabra" ; onclick="onAgregarNuevaPalabra()">Agregar Nueva Palabra</button>
+        </div>
+
+<!-- CREAR PALABRA -->
+        <div id="crear_palabra" class="no_mostrar">
+
+            <textarea id="nueva_palabra" type="text" class="input_text" placeholder="Ingrese una palabra"></textarea>
+
+            <p class="instrucciones"><i class="fa-solid fa-circle-exclamation"></i> Máx. de ocho (8) letras</p>
+
+            <button class="btns2" id="btnGuardaryEmpezar" ; onclick="onGuardaryEmpezar()">Guardar y Empezar</button>
+
+            <button class="btns2" id="btnCancelar" ; onclick="onCancelar()">Cancelar</button>
+        </div>
+
+<!-- JUGAR -->
+        <div id="jugar_ahorcado" class="no_mostrar">
+
+            <div id="img_ahorcado">
+                
+            </div>
+
+            <p id="palabra_adivinada">
+                
+            </p>
+
+            <p id="incorrecto">
+                A G H
+            </p>
+
+
+            <button class="btns3" id="btnNuevoJuego" ; onclick="onNuevoJuego()">Nuevo Juego</button>
+            <button class="btns3" id="btnDesistir" ; onclick="onDesistir()">Desistir</button>
+ 
+        </div>
+
+<!-- FOOTER -->
+        <footer class="footer">
+            <p>ORACLE - Challenge #2: Juego El Ahorcado. Elaborado por Andry Viloria. 2022.</p>
+        </footer>
+
+
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

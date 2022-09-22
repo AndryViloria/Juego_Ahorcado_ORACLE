@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background: #F3F5FC;
+    font-family: inter;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 45% 55%;
+}
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    display: flex;
+}
+
+.logo {
+    height: 48px;
+    width: 31px;
+    left: 44px;
+    margin-top: 20px;
+}
+
+header h4 {
+    background: none;
+    margin-left: 485px;
+    font-size: 32px;
+    color: #0A3871;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: permanent marker;
+}
+
+
+#img_ahorcado {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    margin: 20px;
+    width: 225px;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Paso0{
+    background-image: url(../img/paso0.jpg);
+}
+
+.Paso1{
+    background-image: url(../img/paso1.jpg);
+}
+
+.Paso2{
+    background-image: url(../img/paso2.jpg);
+}
+
+.Paso3{
+    background-image: url(../img/paso3.jpg);
+}
+
+.Paso4{
+    background-image: url(../img/paso4.jpg);
+}
+
+.Paso5{
+    background-image: url(../img/paso5.jpg);
+}
+
+.Paso6{
+    background-image: url(../img/paso6.jpg);
+}
+
+
+
+#jugar_ahorcado {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+#menu_principal {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+#btnIniciarJuego {
+    font-size: 18px;
+    width: 317px;
+    height: 114px;
+    background: #0A3871;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#btnAgregarNuevaPalabra {
+    font-size: 16px;
+    color: #0A3871;
+    box-sizing: border-box;
+    width: 280px;
+    height: 67px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#crear_palabra {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_text {
+    color: #0A3871;
+    height: 50%;
+    width: 60%;
+    border: none;
+    outline: none;
+    margin: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.input_text::placeholder {
+    color: #0A3871;
+}
+
+.instrucciones {
+    background: none;
+    color: #495057;
+    opacity: 0.8;
+    font-size: 12px;
+    margin-left: 330px;
+}
+
+.btns2 {
+    border-radius: 24px;
+    text-align: center;
+    font-size: 16px;
+    border: solid 1px #0A3871;
+    width: 332px;
+    height: 67px;
+    margin-left: 330px;
+    margin-top: 15px;
+}
+
+#btnGuardaryEmpezar {
+    background: #0A3871;
+    color: white;
+}
+
+#btnCancelar {
+    margin: 15px;
+    color: #0A3871;
+}
+
+#palabra_adivinada {
+    text-align: center;
+    color: #0A3871;
+}
+
+#palabra_adivinada span {
+    width: 32px;
+    font-size: 35px;
+    margin-right: 15px;
+    text-align: center;
+    /* border-bottom: solid 2px #0A3871; */
+    display: inline-block;  
+}
+
+#palabra_adivinada.ganador{
+    color: green;
+}
+
+#palabra_adivinada.perdedor{
+    color: red;
+}
+
+#incorrecto {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    color: #495057;
+}
+
+.btns3 {
+    border: solid 1px #0A3871;
+    cursor: pointer;
+    border-radius: 24px;
+    width: 332px;
+    height: 67px;
+    font-size: 16px;
+    margin-left: 330px;
+    margin-top: 30px;
+}
+
+#btnNuevoJuego {
+    color: white;
+    background: #0A3871;
+    
+}
+
+#btnDesistir {
+    color: #0A3871;
+    margin: 15px;
+}
+
+.footer {
+    background: #0A3871;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+}
+
+.footer p {
+    background: none;
+    font-size: 14px;
+    padding: 25px;
+}
+
+.no_mostrar {
+    visibility: hidden;
+}
+
+
+/* TABLET */
+@media (max-width:992px) {
+    .container {
+        grid-template-columns:
+            "header"
+            "menu_principal"
+            "crear_palabra"
+            "jugar_ahorcado"
+            "footer";
+    }
+    header h4 {
+        text-align: center;
+        margin:auto;
+        font-size: 28px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+
+    #btnIniciarJuego {
+        font-size: 15px;
+    }
+    
+    #btnAgregarNuevaPalabra {
+        font-size: 13px;
+    }
+    .btns3{
+        font-size: 15px;
+        margin: auto;
+        margin-left: 72px;
+        margin-top: 30px;
+        width: 172px;
+    }
+    .btns2 {
+        font-size: 14px;
+        margin: auto;
+        margin-left: 72px;
+        margin-top: 30px;
+        width: 250px;
+    }
+    .instrucciones {
+        font-size: 12px;
+        margin-left: 72px;
+    }
+    .input_text {
+        font-size: 22px;
+        height: 40%;
+        width: 70%;
+        margin: 65px;
+    }
+}
+
+/* MOVIL */
+@media (max-width:576px) {
+    .container {
+        grid-template-columns:
+            "header"
+            "menu_principal"
+            "crear_palabra"
+            "jugar_ahorcado"
+            "footer";
+    }
+    header h4 {
+        text-align: center;
+        margin:auto;
+        font-size: 25px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .footer p{
+        font-size: 11px;
+    }
+
+    #btnIniciarJuego {
+        font-size: 15px;
+    }
+    
+    #btnAgregarNuevaPalabra {
+        font-size: 13px;
+    }
+    .btns3{
+        font-size: 13px;
+        margin: auto;
+        margin-left: 70px;
+        margin-top: 30px;
+        width: 172px;
+    }
+    .btns2 {
+        font-size: 13px;
+        margin: auto;
+        margin-left: 70px;
+        margin-top: 30px;
+        width: 172px;
+    }
+    .instrucciones {
+        font-size: 11px;
+        margin-left: 70px;
+    }
+    .input_text {
+        font-size: 20px;
+        height: 40%;
+        width: 50%;
+        margin: 65px;
+    }
+}
