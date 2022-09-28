@@ -1,5 +1,7 @@
 let listaPalabras = ["MARIPOSA", "JIRAFA", "LORO", "AVE", "ALACRAN", "MONO", "GUSANO", "HORMIGA",
- "GUSANO", "LOMBRIZ", "ZORRILLO"]
+    "LOMBRIZ", "ZORRILLO", "PEZ", "OSO", "LOBO", "DELFIN", "TIBURON", "CARACOL", "ARDILLA", "AGUILA", 
+    "FOCA", "CIERVO", "CANGURO", "BALLENA", "CONEJO", "RATA", "RATON", "HAMSTER", "CABALLO", "AVISPA", 
+    "GALLO", "CERDO", "CEBRA", "TIGRE", "LEON", "ELEFANTE", "PINGUINO"];
 let paso_General = 0;
 let palabraSecreta = [];
 let palabraUsuario = [];
